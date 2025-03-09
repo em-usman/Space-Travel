@@ -11,19 +11,21 @@ function Navbar() {
       </span>
       <ul className="list-container">
         <li>
-          <NavLink
+        <NavLink
             to="/"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
           >
-            Missions
+            Rockets
           </NavLink>
         </li>
         <li>
+         
+
           <NavLink
-            to="/rockets"
+            to="/missions"
             className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
           >
-            Rockets
+            Missions
           </NavLink>
         </li>
         <li>

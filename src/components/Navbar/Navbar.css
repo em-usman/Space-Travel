@@ -28,6 +28,7 @@
     font-weight: 700;
     color: #1a1a2e;
     margin: 0;
+    margin-right: 15px;
   }
   
   .list-container {
@@ -35,7 +36,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1.5rem;
+    gap: 30px;
   }
   
   .list-container li {

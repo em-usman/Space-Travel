@@ -6,7 +6,7 @@
   }
   
   .missions-container {
-    width: calc(100% - 60px);
+    width: calc(100% - 80px);
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;

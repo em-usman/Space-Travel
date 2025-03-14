@@ -1,0 +1,30 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+  }
+  
+  .section {
+    text-align: center;
+  }
+
+    .section h2 {
+        margin-bottom: 20px;
+    }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    border: 1px solid gray;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  

@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import './Profile.css';
 
 function Profile() {
   return (
-    <div>Profile</div>
-  )
+    <div className="container">
+      <h1>Profile</h1>
+      <p>View and edit your profile details here!</p>
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;

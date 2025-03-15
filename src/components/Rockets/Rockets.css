@@ -36,10 +36,6 @@
     transition: transform 0.3s ease;
 }
 
-.blog-card:hover {
-    transform: translateY(-5px);
-}
-
 /* Blog image styling */
 .blog-image {
     flex: 0 0 300px;
@@ -90,6 +86,48 @@
 .blog-button:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 767px) {
+    .blog-card {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .blog-image {
+        flex: unset;
+        width: 100%; /* Make the image responsive */
+        display: flex;
+        justify-content: center;
+    }
+
+    .blog-image img {
+        width: 100%; /* Make the image fit the screen */
+        max-width: 350px; /* Limit max width */
+        height: 200px; /* Keep fixed height */
+    }
+
+    .blog-content {
+        padding: 15px;
+    }
+
+    .blog-title {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .blog-description {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .blog-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
 
 /* Media query for laptop screens and larger */
 /* @media (max-width: 1024px) {

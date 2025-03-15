@@ -12,8 +12,9 @@
   color: #1a1a2e;
   border-bottom: 3px solid #1a1a2e;
   margin-bottom: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* position: fixed; */
 }
 
 .logo {
@@ -91,14 +92,16 @@
   .list-container {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed; /* Changed from absolute to fixed */
     top: 80px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 15px;
     border-radius: 8px;
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
+    z-index: 999; /* Ensures navbar is above other content */
   }
+  
 
   .list-container.open {
     display: flex;
@@ -140,6 +143,4 @@
     transform: scaleX(0);
   }
   
-
-
 }

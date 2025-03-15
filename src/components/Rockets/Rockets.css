@@ -8,7 +8,7 @@
 
 /* Container for the blog list */
 .container {
-    width: calc(100% - 80px);
+    width: calc(100% - 50px);
     max-width: 1200px;
     display: flex;
     flex-direction: column;

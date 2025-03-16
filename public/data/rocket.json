@@ -1,0 +1,64 @@
+{
+    "rockets": [
+      {
+        "id": 1,
+        "name": "Luminaris",
+        "image": "/images/rocket1.jpg",
+        "description": "The Luminaris is a sleek, solar-powered rocket engineered for sustainable interplanetary missions, utilizing advanced photovoltaic panels to harness energy. With a capacity to carry 40 tons of cargo and a crew of 20, it excels in long-duration flights to the asteroid belt for resource mining. Its lightweight titanium alloy structure ensures durability while minimizing fuel consumption during launch."
+      },
+      {
+        "id": 2,
+        "name": "Cryonexus",
+        "image": "/images/rocket2.jpg",
+        "description": "The Cryonexus is a cryogenic-fueled rocket built for deep-space exploration, featuring a powerful liquid hydrogen engine for high efficiency. Designed to support missions to Jupiter’s moons with a 60-ton payload, it includes advanced thermal insulation to maintain cryogenic temperatures. Its automated navigation system allows precise docking with space stations in orbit."
+      },
+      {
+        "id": 3,
+        "name": "Astro Glider",
+        "image": "/images/rocket3.jpg",
+        "description": "The AstroGlider is a reusable rocket optimized for low-Earth orbit travel, powered by a combination of solid and liquid propellants for rapid ascent. Capable of transporting 25 passengers and 35 tons of equipment, it’s ideal for satellite deployment and space tourism. Its heat-resistant ceramic tiles enable safe re-entry and multiple launches."
+      },
+      {
+        "id": 4,
+        "name": "Orion Pulse",
+        "image": "/images/rocket4.jpg",
+        "description": "The OrionPulse is a next-generation rocket driven by pulsed plasma thrusters, perfect for high-speed travel to Mars and beyond. With a payload capacity of 70 tons, it supports colonization efforts with self-sustaining habitats onboard. Its compact design and energy-efficient propulsion make it a pioneer in long-term space habitation missions."
+      },
+      {
+        "id": 5,
+        "name": "Celestia",
+        "image": "/images/rocket5.jpg",
+        "description": "The Celestia is an elegant rocket designed for lunar expeditions, featuring a hybrid propulsion system blending chemical and electric engines. It can carry 30 tons of scientific instruments and a crew of 15, enabling detailed lunar surface studies. Its retractable landing legs ensure stability on the Moon’s rugged terrain."
+      },
+      {
+        "id": 6,
+        "name": "Neon Thrust",
+        "image": "/images/rocket6.jpg",
+        "description": "The NeonThrust is a high-thrust rocket utilizing neon-based plasma engines, tailored for rapid orbital insertions and satellite launches. With a 50-ton payload and advanced gyroscopic stabilization, it supports global communication network expansions. Its vibrant neon exhaust signature makes it a standout during nighttime launches."
+      },
+      {
+        "id": 7,
+        "name": "Galaxia",
+        "image": "/images/rocket7.jpg",
+        "description": "The Galaxia is a massive rocket built for interstellar precursor missions, powered by a revolutionary antimatter engine for unprecedented speed. Capable of carrying 100 tons of supplies and a crew of 50, it’s designed for exploratory voyages to nearby star systems. Its reinforced hull protects against micrometeorite impacts in deep space."
+      },
+      {
+        "id": 8,
+        "name": "Ventura",
+        "image": "/images/rocket8.jpg",
+        "description": "The Ventura is a versatile rocket crafted for multi-planetary travel, using a methane-oxygen engine for eco-friendly operations. With a 45-ton capacity, it supports cargo and crew missions to Venus and Mars alike. Its modular cargo bays allow customization for scientific research or commercial freight."
+      },
+      {
+        "id": 9,
+        "name": "Zephyrion",
+        "image": "/images/rocket9.jpg",
+        "description": "The Zephyrion is a lightweight rocket optimized for suborbital flights, powered by a high-efficiency air-breathing engine. Designed to carry 20 passengers for brief space tourism trips, it offers stunning views of Earth from 100 km altitude. Its quick turnaround time makes it a favorite for frequent launches."
+      },
+      {
+        "id": 10,
+        "name": "Eclipse Riser",
+        "image": "/images/rocket10.jpg",
+        "description": "The EclipseRiser is a robust rocket engineered for heavy-lift missions to geostationary orbit, powered by a triple-stage solid rocket booster. With a 90-ton payload capacity, it’s ideal for deploying large space telescopes and habitats. Its eclipse-inspired black coating reduces solar heat absorption during extended missions."
+      }
+    ]
+  }

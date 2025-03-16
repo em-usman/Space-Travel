@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header className="head-container">
       <span className="logo">
-        <img src="./src/assets/space.png" alt="Logo" />
+        <img src="/images/space.png" alt="Logo" />
         <h1 className="heading">Space-Travel</h1>
       </span>
 

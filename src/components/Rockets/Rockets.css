@@ -29,9 +29,9 @@
 /* Blog card styling */
 .blog-card {
     display: flex;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -127,16 +127,3 @@
         font-size: 16px;
     }
 }
-
-
-/* Media query for laptop screens and larger */
-/* @media (max-width: 1024px) {
-    .blog-card {
-        flex-direction: column;
-    }
-
-    .blog-image {
-        flex: none;
-        height: 200px;
-    }
-} */

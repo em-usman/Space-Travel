@@ -13,19 +13,19 @@ function Rockets() {
     }, []);
 
   return (
-    <div class="container">
-        <ul class="blog-list">
+    <div className="container">
+        <ul className="blog-list">
             {rockets.map((rocket) =>(
-            <li class="blog-card" key={rocket.id}>
-                <div class="blog-image">
+            <li className="blog-card" key={rocket.id}>
+                <div className="blog-image">
                     <img src={rocket.image} alt="" />
                 </div>
-                <div class="blog-content">
-                    <h2 class="blog-title">{rocket.name}</h2>
-                    <p class="blog-description">
+                <div className="blog-content">
+                    <h2 className="blog-title">{rocket.name}</h2>
+                    <p className="blog-description">
                        {rocket.description}
                     </p>
-                    <button class="blog-button">Reserve Rocket</button>
+                    <button className="blog-button">Reserve Rocket</button>
                 </div>
             </li>
         ))}

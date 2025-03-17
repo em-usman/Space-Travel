@@ -29,9 +29,7 @@
 /* Blog card styling */
 .blog-card {
     display: flex;
-    /* background-color: #fff; */
     border-radius: 10px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -68,6 +66,15 @@
     color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
+}
+
+.reserved-tag {
+    padding: 3px 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-right: 5px;
 }
 
 /* Button styling */

@@ -1,16 +1,18 @@
-import React, {useEffect, useState} from 'react';
-import './Missions.css';
+import React, { useEffect, useState, useContext } from "react";
+import { MissionContext } from "../../context/missionContext";
+import "./Missions.css";
 
 function Missions() {
- 
-  const[missions, setMissions] = useState([]);
 
+  const { reservedMissions, joinMission, leaveMission } = useContext(MissionContext);
 
-  useEffect(() =>{
+  const [missions, setMissions] = useState([]);
+
+  useEffect(() => {
     fetch("/data/mission.json")
-    .then((response) => response.json())
-    .then((data) => setMissions(data.missions))
-    .catch((error) => console.log("Error fetchig data:", error))
+      .then((response) => response.json())
+      .then((data) => setMissions(data.missions))
+      .catch((error) => console.log("Error fetching data:", error));
   }, []);
 
   return (
@@ -24,20 +26,29 @@ function Missions() {
           </tr>
         </thead>
         <tbody>
-          {missions.map((mission) => (
-          <tr key={mission.id}>
-            <td>{mission.name}</td>
-            <td>
-              {mission.description}
-            </td>
-            <td>
-              <div className="status-container">
-                <span className="status not-a-member">NOT A MEMBER</span>
-                <button className="join-button">Join Mission</button>
-              </div>
-            </td>
-          </tr>
-          ))}
+          {missions.map((mission) => {
+            const isJoined = reservedMissions.includes(mission.name);
+
+            return (
+              <tr key={mission.id}>
+                <td>{mission.name}</td>
+                <td>{mission.description}</td>
+                <td>
+                  <div className="status-container">
+                    <span className={`status ${isJoined ? "active-member" : "not-a-member"}`}>
+                      {isJoined ? "Active Member" : "Not a Member"}
+                    </span>
+                    <button
+                      className="join-button"
+                      onClick={() => (isJoined ? leaveMission(mission.name) : joinMission(mission.name))}
+                    >
+                      {isJoined ? "Leave Mission" : "Join Mission"}
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

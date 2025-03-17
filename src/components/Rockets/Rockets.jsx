@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { ReservationContext } from '../../context/ReservationContext'; // Import the context
+import { ReservationContext } from '../../context/RocketContext'; // Import the context
 import './Rockets.css';
 
 function Rockets() {

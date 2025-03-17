@@ -1,9 +1,14 @@
 import React, { useContext } from 'react';
-import { ReservationContext } from '../../context/ReservationContext';
+import { ReservationContext } from '../../context/RocketContext';
+import { MissionContext } from '../../context/missionContext';
 import './Profile.css';
 
 function Profile() {
-  const {reservedRockets} = useContext(ReservationContext);
+  // For rocket reservation
+  const { reservedRockets } = useContext(ReservationContext);
+
+  // For mission reservation
+  const { reservedMissions } = useContext(MissionContext);
 
   
   return (
@@ -26,16 +31,21 @@ function Profile() {
       </div>
   
 
-     
-
-
       {/* Missions Section */}
       <div className="section">
         <h2>My Missions</h2>
         <div className="list">
-            <div className="card">
-              No missions reserved
+          {reservedMissions.length > 0 ? (
+            reservedMissions.map((mission, index) =>(
+              <div key={index} className="card">
+                {mission} {/* Display only reserved missions */}
             </div>
+            ))
+          ) :(
+            <p>
+            No missions reserved
+          </p>// Show message when no mission are reserved
+          )}
         </div>
       </div>
     </div>

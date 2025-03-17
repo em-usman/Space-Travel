@@ -1,0 +1,56 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Reduced gap for smaller screens */
+    padding: 10px; /* Reduced padding for mobile */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  .section {
+    text-align: center;
+  }
+
+    .section h2 {
+        margin-bottom: 15px; /* Reduced spacing */
+        font-size: 1.2rem;  /* Slightly smaller font */
+    }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card {
+    border: 1px solid gray;
+    padding: 15px; /* Reduce padding */
+    width: 120px; /* Reduce width */
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 0.9rem; /* Smaller text */
+  }
+
+  /* Responsive Design for Mobile */
+  @media screen and(max-width: 767px) {
+    .dashboard-container {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px; /* Reduced gap for smaller screens */
+      padding: 5px; /* Reduced padding for mobile */
+    }
+
+    .list {
+      flex-direction: row; /* Ensure horizontal layout */
+      flex-wrap: wrap;  /* Wrap if needed */
+      justify-content: center; /* Center align cards */
+
+    }
+    
+    .card {
+      width: 100px; /* Further reduce width */
+      padding: 10px; /* Reduce padding */
+      font-size: 0.8rem; /* Smaller text */
+    }
+  }
+  

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .missions-container {
+    width: calc(100% - 80px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 0;
+    padding: 20px 0;
+  }
+  
+  .missions-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+  }
+  
+  .missions-table th,
+  .missions-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .missions-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .missions-table td {
+    vertical-align: top;
+  }
+  
+  .status-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .status.not-a-member {
+    background-color: #d3d3d3;
+    color: #333;
+  }
+  
+  .status.active-member {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .join-button,
+  .leave-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 120px;
+  }
+  
+  .join-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .join-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .leave-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .leave-button:hover {
+    background-color: #c82333;
+  }
+
+  /* Media query for mobile screens (max-width: 768px) */
+@media screen and (max-width: 767px) {
+  .missions-container {
+    width: calc(100% - 50px); /* Reduce side margins for mobile */
+    padding: 10px 0;
+    position: relative; /* Ensures content does not overlap */
+    z-index: 1;
+    
+    
+  }
+
+  .missions-table {
+    display: block; /* Change from table to block layout */
+    border: none; /* Remove table border */
+     /* Remove background for cleaner look */
+  }
+
+  .missions-table thead {
+    display: none; /* Hide table headers on mobile */
+  }
+
+  .missions-table tbody,
+  .missions-table tr,
+  .missions-table td {
+    display: block; /* Stack elements vertically */
+    width: 100%;
+  }
+
+  .missions-table tr {
+    margin-bottom: 15px; /* Space between mission "cards" */
+    border: 1px solid #ddd; /* Add border to each mission section */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f5f5f5; /* Restore background for each section */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .missions-table td {
+    border: none; /* Remove individual cell borders */
+    padding: 10px; /* Adjust padding */
+    position: relative; /* For pseudo-element positioning */
+  }
+
+  /* Add labels before each cell content using pseudo-elements */
+  .missions-table td:nth-child(1)::before {
+    content: "Mission: ";
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .missions-table td:nth-child(2)::before {
+    content: "Description: ";
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .missions-table td:nth-child(3)::before {
+    content: "Status: ";
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .status-container {
+    flex-direction: row; /* Stack status and button horizontally */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .join-button,
+  .leave-button {
+    width: auto; /* Allow buttons to size naturally */
+    padding: 6px 12px; /* Slightly smaller buttons */
+    font-size: 13px;
+  }
+
+  .status {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}

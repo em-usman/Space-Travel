@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { ReservationContext } from '../../context/RocketContext'; // Import the context
+import { RocketContext } from '../../context/RocketContext'; // Correct import
 import './Rockets.css';
 
 function Rockets() {
     const [rockets, setRockets] = useState([]); // State to store fetched rocket data
-    const { reservedRockets, reserveRocket, cancelReservation } = useContext(ReservationContext); // Get functions from context
+    const { reservedRockets, reserveRocket, cancelReservation } = useContext(RocketContext); //  Get functions from RocketContext
 
     // Fetch rocket data from local JSON file when the component mounts
     useEffect(() => {
@@ -18,7 +18,7 @@ function Rockets() {
         <div className="container">
             <ul className="blog-list">
                 {rockets.map((rocket) => {
-                    const isReserved = reservedRockets.includes(rocket.name); // Check if rocket is reserved
+                    const isReserved = reservedRockets.includes(rocket.name); //  Check if rocket is reserved
 
                     return (
                         <li className="blog-card" key={rocket.id}>

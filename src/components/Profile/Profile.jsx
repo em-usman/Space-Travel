@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { ReservationContext } from '../../context/RocketContext';
+import { RocketContext } from '../../context/RocketContext';
 import { MissionContext } from '../../context/missionContext';
 import './Profile.css';
 
 function Profile() {
   // For rocket reservation
-  const { reservedRockets } = useContext(ReservationContext);
+  const { reservedRockets } = useContext(RocketContext);
 
   // For mission reservation
   const { reservedMissions } = useContext(MissionContext);

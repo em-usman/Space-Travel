@@ -1,9 +1,9 @@
 import React, { createContext, useState, useEffect } from 'react';
 
 // Create a Context for managing rocket reservations
-export const ReservationContext = createContext();
+export const RocketContext = createContext();
 
-export const ReservationProvider = ({ children }) => {
+export const RocketProvider = ({ children }) => {
     const [reservedRockets, setReservedRockets] = useState(() => {
         // Load from localStorage or default to an empty array
         const savedRockets = localStorage.getItem("reservedRockets");
@@ -17,8 +17,8 @@ export const ReservationProvider = ({ children }) => {
 
     /**
         Function to reserve a rocket
-         Adds the rocket to the reserved list if it's not already there
-         Updates state and saves to localStorage
+        Adds the rocket to the reserved list if it's not already there
+        Updates state and saves to localStorage
      */
     const reserveRocket = (rocketName) => {
         setReservedRockets((prev) => {
@@ -28,8 +28,8 @@ export const ReservationProvider = ({ children }) => {
         });
     };
 
-     /**
-        Function to cancel a rocket
+    /**
+        Function to cancel a rocket reservation
         Removes the rocket from the reserved list
         Updates state and saves to localStorage
      */
@@ -41,11 +41,10 @@ export const ReservationProvider = ({ children }) => {
         });
     };
 
-    // Provide the reserved rocket and functions to children components
+    // Provide the reserved rockets and functions to children components
     return (
-        <ReservationContext.Provider value={{ reservedRockets, reserveRocket, cancelReservation }}>
+        <RocketContext.Provider value={{ reservedRockets, reserveRocket, cancelReservation }}>
             {children}
-        </ReservationContext.Provider>
+        </RocketContext.Provider>
     );
 };
-

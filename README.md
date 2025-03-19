@@ -36,7 +36,7 @@
 # 📖 [Space Travel] <a name="about-project"></a>
 
 
-**[Space Travel]** is a web application that allows users to explore and reserve rockets for space travel. The app fetches rocket data from a local JSON file and provides an interactive experience for users to reserve and manage their rocket reservations. The application also features a mission section and user profiles.
+**[Space Travel]** is a web application that allows users to explore and reserve rockets for space travel. The app fetches rocket data from a local JSON file and provides an interactive experience for users to reserve and manage their rocket reservations. The application also features a mission section and user profiles. Context API is used for state management (Rocket reservations) and Local Storage ensures data persistence.
 
 ## 🛠 Built With <a name="built-with"></a>
 
